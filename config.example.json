@@ -1,0 +1,9 @@
+{
+  "mqtt": {
+    "server": ""
+  },
+  "telegram": {
+    "chat_id": "",
+    "token": ""
+  }
+}
