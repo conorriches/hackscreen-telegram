@@ -29,7 +29,7 @@ class Telegram {
   mqttReceivedMessage(topic, message) {
     switch (topic) {
       case "door/outer/opened/username":
-        let justEntered = message.toString();
+        let justEntered = decodeURIComponent(message.toString());
 
         if (!justEntered || justEntered == "") justEntered = "👻";
         if (justEntered == "-" || justEntered == "anon") break;
